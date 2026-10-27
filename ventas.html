@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda D'Ali - Ventas</title>
+</head>
+
+<body>
+
+    <h1>Registro de Ventas - Tienda D'Ali</h1>
+
+    <p>
+        <strong>
+            Prototipo de formulario para
+            registrar las ventas del negocio.
+        </strong>
+    </p>
+    <img src="imagen/logo1.png" alt="Logo del local" >
+
+    <hr>
+
+    <h2>Menu de navegacion</h2>
+
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+    </ul>
+
+    <hr>
+
+  
+    <h2>Formulario de ventas</h2>
+
+    <p>
+        El siguiente formulario representa
+        los datos necesarios para registrar
+        una venta en la Tienda D'Ali.
+    </p>
+
+    <form>
+
+        <h3>Datos de la venta</h3>
+
+        <p>
+            <label for="fecha">
+                Fecha de la venta:
+            </label>
+
+            <input
+                type="date"
+                id="fecha"
+                name="fecha"
+                required>
+        </p>
+
+        <p>
+            <label for="empleado">
+                Empleado responsable:
+            </label>
+
+            <input
+                type="text"
+                id="empleado"
+                name="empleado"
+                placeholder="Nombre del empleado"
+                required>
+        </p>
+
+        <h3>Informacion del producto</h3>
+
+        <p>
+            <label for="producto">
+                Seleccione el producto:
+            </label>
+
+            <select
+                id="producto"
+                name="producto">
+
+                <option value="P001">
+                    P001 - Arroz 1 kg
+                </option>
+
+                <option value="P002">
+                    P002 - Azucar 1 kg
+                </option>
+
+                <option value="P003">
+                    P003 - Fideos 400 g
+                </option>
+
+                <option value="P004">
+                    P004 - Agua 500 ml
+                </option>
+
+                <option value="P005">
+                    P005 - Jugo 1 litro
+                </option>
+
+                <option value="P006">
+                    P006 - Gaseosa 1 litro
+                </option>
+
+                <option value="P007">
+                    P007 - Jabon de tocador
+                </option>
+
+                <option value="P008">
+                    P008 - Detergente 500 g
+                </option>
+
+                <option value="P009">
+                    P009 - Papel higienico
+                </option>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="cantidad">
+                Cantidad vendida:
+            </label>
+
+            <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                min="1"
+                required>
+        </p>
+
+        <p>
+            <label for="precio">
+                Precio unitario en USD:
+            </label>
+
+            <input
+                type="text"
+                id="precio"
+                name="precio"
+                placeholder="Ejemplo: 1.25"
+                required>
+        </p>
+
+        <p>
+            <label for="total">
+                Total de la venta en USD:
+            </label>
+
+            <input
+                type="text"
+                id="total"
+                name="total"
+                placeholder="Calcular manualmente"
+                required>
+        </p>
+
+    
+
+        <h3>Observaciones</h3>
+
+        <p>
+            <label for="observaciones">
+                Comentarios de la venta:
+            </label>
+
+            <textarea
+                id="observaciones"
+                name="observaciones"
+                rows="4"
+                cols="40"></textarea>
+        </p>
+
+        <p>
+            <button type="reset">
+                Limpiar formulario
+            </button>
+        </p>
+
+    </form>
+
+    
+    <h2>Ejemplo de registro de venta</h2>
+
+    <p>
+        Se presenta una venta ficticia
+        para demostrar como se organizaria
+        la informacion.
+    </p>
+
+    <table border="1">
+
+        <caption>
+            Venta de demostracion
+        </caption>
+
+        <tr>
+            <th>Codigo</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio unitario</th>
+            <th>Subtotal</th>
+        </tr>
+
+        <tr>
+            <td>P001</td>
+            <td>Arroz 1 kg</td>
+            <td>2</td>
+            <td>$1.25</td>
+            <td>$2.50</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <strong>Total de ejemplo</strong>
+            </td>
+            <td>
+                <strong>$2.50</strong>
+            </td>
+        </tr>
+
+    </table>
+
+    <h3>Informacion del ejemplo</h3>
+
+    <ul>
+        <li>Fecha: 20/10/2026</li>
+        <li>Producto: Arroz 1 kg</li>
+        <li>Cantidad vendida: 2 unidades</li>
+        <li>Precio unitario: $1.25</li>
+        <li>Total: $2.50</li>
+    </ul>
+
+    
+
+    <h2>Otras opciones</h2>
+
+    <p>
+        <a href="productos.html">
+            Consultar productos
+        </a>
+    </p>
+
+    <p>
+        <a href="reportes.html">
+            Consultar reportes de ejemplo
+        </a>
+    </p>
+
+    <p>
+        <a href="index.html">
+            Regresar al inicio
+        </a>
+    </p>
+
+</body>
+</html>
