@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda D'Ali - Inventario</title>
+</head>
+
+<body>
+    <h1>Control de Inventario - Tienda D'Ali</h1>
+
+    <p><strong>
+            Consulta de productos y cantidades
+            disponibles de demostracion.
+        </strong></p>
+    <img src="imagen/logo1.png" alt="Logo del local" >
+    <hr>
+
+    <h2>Menu de navegacion</h2>
+
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>Inventario de productos</h2>
+
+    <p>Esta seccion representa la informacion
+        de existencias de la Tienda D'Ali.
+    </p>
+
+    <h2>Listado de existencias</h2>
+
+    <table border="1">
+
+        <caption>
+            Inventario de demostracion
+        </caption>
+
+        <tr>
+            <th>Codigo</th>
+            <th>Producto</th>
+            <th>Categoria</th>
+            <th>Precio USD</th>
+            <th>Cantidad</th>
+            <th>Estado</th>
+        </tr>
+
+        <tr>
+            <td>P001</td>
+            <td>Arroz 1 kg</td>
+            <td>Alimentos basicos</td>
+            <td>$1.25</td>
+            <td>30</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P002</td>
+            <td>Azucar 1 kg</td>
+            <td>Alimentos basicos</td>
+            <td>$1.10</td>
+            <td>25</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P003</td>
+            <td>Fideos 400 g</td>
+            <td>Alimentos basicos</td>
+            <td>$0.85</td>
+            <td>20</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P004</td>
+            <td>Agua 500 ml</td>
+            <td>Bebidas</td>
+            <td>$0.50</td>
+            <td>40</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P005</td>
+            <td>Jugo 1 litro</td>
+            <td>Bebidas</td>
+            <td>$1.50</td>
+            <td>15</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P006</td>
+            <td>Gaseosa 1 litro</td>
+            <td>Bebidas</td>
+            <td>$1.25</td>
+            <td>18</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P007</td>
+            <td>Jabon de tocador</td>
+            <td>Limpieza e higiene</td>
+            <td>$0.75</td>
+            <td>35</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P008</td>
+            <td>Detergente 500 g</td>
+            <td>Limpieza e higiene</td>
+            <td>$1.80</td>
+            <td>12</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>P009</td>
+            <td>Papel higienico</td>
+            <td>Limpieza e higiene</td>
+            <td>$1.00</td>
+            <td>8</td>
+            <td><mark>Stock bajo</mark></td>
+        </tr>
+    </table>
+
+   
+
+     <h2>Control de existencias</h2>
+
+    <p>
+        Para este ejemplo se considera
+        que un producto tiene existencias
+        bajas cuando quedan 10 unidades o menos.
+    </p>
+
+    <h3>Estados del inventario</h3>
+
+    <ul>
+        <li>
+            <strong>Disponible:</strong>
+            Producto con mas de 10 unidades.
+        </li>
+        <li>
+            <strong>Stock bajo:</strong>
+            Producto con 10 unidades o menos.
+        </li>
+    </ul>
+
+     <h2>Formulario de registro de productos</h2>
+
+    <p>
+        Complete los siguientes campos
+        para representar el registro
+        de un producto nuevo.
+    </p>
+
+    <form>
+
+         <p>
+            <label for="codigo">
+                Codigo del producto:
+            </label>
+
+            <input
+                type="text"
+                id="codigo"
+                name="codigo"
+                placeholder="Ejemplo: P010"
+                required>
+        </p>
+
+         <p>
+            <label for="nombre">
+                Nombre del producto:
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre del producto"
+                required>
+        </p>
+
+         <p>
+            <label for="categoria">
+                Categoria:
+            </label>
+
+            <select
+                id="categoria"
+                name="categoria">
+
+                <option value="alimentos">
+                    Alimentos basicos
+                </option>
+
+                <option value="bebidas">
+                    Bebidas
+                </option>
+
+                <option value="limpieza">
+                    Limpieza e higiene
+                </option>
+
+            </select>
+        </p>
+
+         <p>
+            <label for="precio">
+                Precio del producto:
+            </label>
+
+            <input
+                type="number"
+                id="precio"
+                name="precio"
+                min="0"
+                required>
+        </p>
+
+         <p>
+            <label for="cantidad">
+                Cantidad disponible:
+            </label>
+
+            <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                min="0"
+                required>
+        </p>
+
+         <p>
+            <label for="observaciones">
+                Observaciones:
+            </label>
+
+            <textarea
+                id="observaciones"
+                name="observaciones"
+                rows="4"
+                cols="40"></textarea>
+        </p>
+
+         <p>
+            <button type="reset">
+                Limpiar formulario
+            </button>
+        </p>
+
+    </form>
+
+     
+    <h2>Otras secciones</h2>
+
+    <p>
+        <a href="productos.html">
+            Consultar catalogo de productos
+        </a>
+    </p>
+
+    <p>
+        <a href="ventas.html">
+            Ir al registro de ventas
+        </a>
+    </p>
+
+    <p>
+        <a href="index.html">
+            Regresar al inicio
+        </a>
+    </p>
+
+     
+</body>
+</html>
